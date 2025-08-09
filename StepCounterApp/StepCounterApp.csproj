@@ -24,9 +24,10 @@
         <ApplicationTitle>StepCounterApp</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.stepcounterapp</ApplicationId>
+        <ApplicationId>com.ddzhemchuk.stepcounterapp</ApplicationId>
 
         <!-- Versions -->
+        <BundleIdentifier>com.ddzhemchuk.stepcounterapp</BundleIdentifier>
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
         <ApplicationVersion>1</ApplicationVersion>
 

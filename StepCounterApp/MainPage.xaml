@@ -1,13 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StepCounterApp.MainPage">
-    
-    <VerticalStackLayout Padding="30">
-        <Label x:Name="StepCountLabel"
-               Text="Steps: 0"
-               FontSize="32"
-               HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="StepCounterApp.MainPage"
+             Title="Step Counter">
 
+    <VerticalStackLayout Spacing="16" Padding="24">
+        <Label Text="Step Counter" FontSize="28" HorizontalOptions="Center" />
+        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+            <Label x:Name="StepCountLabel" Grid.Row="0" Grid.ColumnSpan="2" Text="Steps: 0" FontSize="22" />
+            <Label x:Name="StatusLabel" Grid.Row="1" Grid.ColumnSpan="2" Text="Status: idle" />
+            <Button x:Name="StartButton" Grid.Row="2" Grid.Column="0" Text="Start" Clicked="OnStartClicked" />
+            <Button x:Name="StopButton" Grid.Row="2" Grid.Column="1" Text="Stop" IsEnabled="False" Clicked="OnStopClicked" />
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>
